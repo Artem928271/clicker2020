@@ -1,64 +1,81 @@
 <!doctype html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
 
-    <title>Clicker 2020</title>
-    <meta name="description" content="Clicker 2020">
-    <meta name="author" content="ohiofi">
+<head>
+	<meta charset="utf-8">
 
-    <style>
-      img {
-        margin-right: auto;
-        margin-left: auto;
-        display: block;
-        width: 200px;
-      }
-      #photo1, #photo2, #photo3 {
-        display:none
-      }
-      #bronzeMedal {
-      display: none;
-      }
-      #silverMedal {
-      display: none;
-      }
-      #goldMedal {
-      display: none;
-      }
-      button {
-      margin-right: auto;
-      margin-left: auto;
-      display: block;
-      margin-bottom: 10px;
-      margin-top: 10px;
-      }
-      h1 {
-      text-align: center;
-      }
+	<title>Clicker 2020</title>
+	<meta name="description" content="Clicker 2020">
+	<meta name="author" content="ohiofi">
 
-      #five{
-      display:none;
-      }
+	<style>
+		img {
+			margin-right: auto;
+			margin-left: auto;
+			display: block;
+			width: 200px;
+		}
 
-    #ten{
-      display:none;
-    }
+		#photo1,
+		#photo2,
+		#photo3 {
+			display: none
+		}
 
-    #twenty{
-      display:none;
-    }
+		#bronzeMedal {
+			display: none;
+		}
 
+		#silverMedal {
+			display: none;
+		}
 
+		#goldMedal {
+			display: none;
+		}
 
+		button {
+			margin-right: auto;
+			margin-left: auto;
+			display: block;
+			margin-bottom: 10px;
+			margin-top: 10px;
+			transition: 1s;
+			background-color: rgb(30, 111, 233);
+			/* blu */
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			font-size: 16px;
 
-    </style>
+		}
 
-  </head>
-  <body>
-    <h1 id= "score">Your score is 0</h1>
-    <button onclick="myFunction()">Click me</button>
+		h1 {
+			text-align: center;
+		}
+
+		#five {
+			display: none;
+		}
+
+		#ten {
+			display: none;
+		}
+
+		#twenty {
+			display: none;
+		}
+	</style>
+	<script src="/script.js" defer>
+	</script>
+</head>
+
+<body>
+	<h1 id="score">Your score is 0</h1>
+	<button onclick="addClick()">Click me</button>
     <br>
     <img src="images (1).jpg" alt="cute image" id="photo1">
     <img src="images.jpg" alt="cute image" id="photo2">
@@ -76,20 +93,18 @@
 
 
 
-
-
-    <script>
+<script>
+  
       var clicks; 
       clicks = 0;
-      function myFunction() {
+      function addClick(){
         clicks += 1;
-        document.getElementById("score").innerHTML = "Your score is " + clicks
+        document.getElementById("score").innerHTML = "Your score is " + clicks;
         if (clicks == 5) {
-          document.getElementById("five).style.display='block';
+          document.getElementById("five").style.display='block';
         }
         if (clicks == 10) {
           document.getElementById("photo1").style.display='block';
-
           alert('You have reached 10 points');
         }
         if (clicks == 20) {
@@ -119,11 +134,6 @@
           alert('You have reached 40 points');
         }
   }
-
-
-
-
-
-    </script>
+  </script>
   </body>
 </html>
