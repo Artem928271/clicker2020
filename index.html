@@ -68,6 +68,12 @@
 		#twenty {
 			display: none;
 		}
+	
+		#BUG{
+			display: none;
+		}
+
+	
 	</style>
 	<script src="/script.js" defer>
 	</script>
@@ -89,7 +95,7 @@
     <img src="https://repl.it/@TreFoley/Clicker-Game#10.png" alt="ten" id="ten" width="250">
     <img src="https://repl.it/@TreFoley/Clicker-Game#20.png" alt="twenty" id="twenty" width="250">
 
-  
+  <img  id='BUG' src="stick bug.jpg" alt="bug";>
 
 
 
@@ -133,7 +139,13 @@
           document.getElementById("photo3").style.display='block';
           alert('You have reached 40 points');
         }
-  }
+ 
+      if (clicks == 5){ alert("you have five points");}
+      if (clicks == 10) {alert("you have ten points");}
+      if (clicks == 20) {alert("you have 20 points"); 
+	document.getElementById('BUG').style.display='inline';}
+      
+      }
   </script>
   </body>
 </html>
