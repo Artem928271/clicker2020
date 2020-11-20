@@ -147,5 +147,42 @@
       
       }
   </script>
+	
+	<script>
+    var myScore = 0;
+
+    function addClick() {
+      myScore += 1;
+      document.getElementById('clickCounter').innerHTML='Number of clicks: '+ myScore
+      if (myScore == 5) {
+        alert("Bepsi unlocked!")
+        document.getElementById('bepsi').style.display='inline'
+      } 
+      if (myScore == 10) {
+        alert("Pizza unlocked!")
+        document.getElementById('pizza').style.display='inline'
+      } 
+      if (myScore == 20) {
+        alert("Sans unlocked!")
+        document.getElementById('sans').style.display='inline'
+      } 
+    }
+
+    
+
+    </script>
+    <h1 id="clickCounter"> Number of clicks: 0 </h1>
+
+    <button onclick="addClick()"> Click me </button> <br>
+  
+    <img id="bepsi" src="bepsi.jpg" style="display:none" width="150px" alt="bepsi can">
+
+    <img id="pizza" src="pizza image.jpg" style="display:none" width="150px" alt="pizza">
+
+    <img id="sans" src="sans.gif" style="display:none" width="150px" alt="sans skeleton">
+
+    
+
+	
   </body>
 </html>
