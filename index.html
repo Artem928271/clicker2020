@@ -72,6 +72,18 @@
 		#BUG{
 			display: none;
 		}
+		
+		#hiddenBronze {
+  			display: none;
+		}
+
+		#hiddenSilver {
+		  	display: none;
+		}
+
+		#hiddenGold {
+		  	display: none;
+		}
 
 	
 	</style>
@@ -94,6 +106,10 @@
     <img src="https://repl.it/@TreFoley/Clicker-Game#Five.png" alt="Five" id="five" width="250">
     <img src="https://repl.it/@TreFoley/Clicker-Game#10.png" alt="ten" id="ten" width="250">
     <img src="https://repl.it/@TreFoley/Clicker-Game#20.png" alt="twenty" id="twenty" width="250">
+	
+    <img id = "hiddenBronze" src="bronze.png" alt="Bronze medal" width="100">
+    <img id = "hiddenSilver" src="silver.png" alt="Silver medal" width="100">
+    <img id = "hiddenGold" src="gold.jpg" alt="Gold medal" width="80">
 
   <img  id='BUG' src="stick bug.jpg" alt="bug";>
 
@@ -139,6 +155,18 @@
           document.getElementById("photo3").style.display='block';
           alert('You have reached 40 points');
         }
+	if(clicks == 15) {
+    	 	alert("Bronze Medal")
+    	 	document.getElementById('hiddenBronze').style.display = 'block'
+  	}
+ 	if(clicks == 45) {
+    	 	alert("Silver Medal")
+    	 	document.getElementById('hiddenSilver').style.display = 'block'
+  	}
+  	if(clicks == 50) {
+    	 	alert("Gold Medal")
+    	 	document.getElementById('hiddenGold').style.display = 'block'
+  	}      
  
       if (clicks == 5){ alert("you have five points");}
       if (clicks == 10) {alert("you have ten points");}
