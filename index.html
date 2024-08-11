@@ -92,7 +92,7 @@
 </head>
 
 <body>
-	<h1 id="score">Your score is 0</h1>
+	<h1 id="score">Your score is 1000</h1>
 	<button onclick="addClick()">Click me</button>
     <br>
     <img src="images (1).jpg" alt="cute image" id="photo1">
@@ -120,7 +120,7 @@
       var clicks; 
       clicks = 0;
       function addClick(){
-        clicks += 1;
+        clicks += 100;
         document.getElementById("score").innerHTML = "Your score is " + clicks;
         if (clicks == 5) {
           document.getElementById("five").style.display='block';
